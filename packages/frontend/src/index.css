@@ -1,1 +1,42 @@
 @import "tailwindcss";
+
+@theme {
+    /* 갈색 팔레트 */
+    --color-brown-50: #F5EFE6;
+    --color-brown-100: #E8C9A8;
+    --color-brown-200: #D4A574;
+    --color-brown-400: #C8956B;
+    --color-brown-600: #8B5E3C;
+    --color-brown-700: #6B3A1F;
+    --color-brown-900: #3D1F08;
+
+    /* 포레스트 그린 액센트 */
+    --color-forest-50: #D8F3DC;
+    --color-forest-300: #7EC8A0;
+    --color-forest-600: #2D6A4F;
+    --color-forest-900: #1A3A2A;
+
+    /* 배경 */
+    --color-cream: #F9F3E8;
+    --color-ivory: #FFF8F0;
+}
+
+@layer components {
+    .saola-pattern {
+        background-image:
+            radial-gradient(circle, #8B5E3C18 6px, transparent 6px),
+            radial-gradient(circle, #8B5E3C10 4px, transparent 4px),
+            radial-gradient(circle, #8B5E3C14 5px, transparent 5px);
+        background-size: 120px 120px, 80px 80px, 160px 160px;
+        background-position: 0 0, 40px 60px, 80px 20px;
+    }
+
+    .saola-pattern-dark {
+        background-image:
+            radial-gradient(circle, #ffffff18 6px, transparent 6px),
+            radial-gradient(circle, #ffffff10 4px, transparent 4px),
+            radial-gradient(circle, #ffffff14 5px, transparent 5px);
+        background-size: 120px 120px, 80px 80px, 160px 160px;
+        background-position: 0 0, 40px 60px, 80px 20px;
+    }
+}
