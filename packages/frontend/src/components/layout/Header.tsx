@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 export default function Header() {
   return (
     <header className="bg-brown-900 saola-pattern-dark border-b border-brown-700">
@@ -24,9 +26,12 @@ export default function Header() {
           <a href="/about" className="text-brown-200 hover:text-brown-50 text-sm transition-colors">
             소개
           </a>
-          <button className="px-4 py-1.5 rounded-lg border border-brown-600 text-brown-200 hover:bg-brown-700 text-sm transition-colors">
+          <Link
+            to="/login"
+            className="px-4 py-1.5 rounded-lg border border-brown-600 text-brown-200 hover:bg-brown-700 text-sm transition-colors"
+          >
             로그인
-          </button>
+          </Link>
         </nav>
 
       </div>
