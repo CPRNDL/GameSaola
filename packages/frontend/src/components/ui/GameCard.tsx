@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom'
 import type { GameInfo } from '../../data/games'
 
 const DIFFICULTY_LABEL = {
@@ -17,16 +18,20 @@ interface GameCardProps {
 }
 
 export default function GameCard({ game }: GameCardProps) {
+  const navigate = useNavigate()
+
   return (
-    <div className={`
-      group relative bg-ivory rounded-2xl overflow-hidden
-      border border-brown-100
-      transition-all duration-200
-      ${game.available
-        ? 'hover:border-brown-400 hover:-translate-y-1 hover:shadow-lg cursor-pointer'
-        : 'opacity-60 cursor-not-allowed'
-      }
-    `}>
+    <div 
+      onClick={() => game.available && navigate(`/game/${game.id}`)}
+      className={`
+        group relative bg-ivory rounded-2xl overflow-hidden
+        border border-brown-100
+        transition-all duration-200
+        ${game.available
+          ? 'hover:border-brown-400 hover:-translate-y-1 hover:shadow-lg cursor-pointer'
+          : 'opacity-60 cursor-not-allowed'
+        }
+      `}>
 
       <div className="h-40 bg-brown-900 saola-pattern-dark flex items-center justify-center">
         <span className="text-brown-600 text-sm font-medium">준비 중</span>

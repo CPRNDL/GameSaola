@@ -20,7 +20,7 @@ export const GAMES: GameInfo[] = [
     maxPlayers: 2,
     duration: '10~20분',
     difficulty: 'easy',
-    available: false,
+    available: true,
   },
   {
     id: 'baduk',
