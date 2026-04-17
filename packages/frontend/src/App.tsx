@@ -4,6 +4,7 @@ import HomePage from './pages/HomePage'
 import LobbyPage from './pages/LobbyPage'
 import LoginPage from './pages/LoginPage'
 import SignupPage from './pages/SignupPage'
+import OmokPage from './games/omok/OmokPage'
 
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
         <Route path="/game/:gameId" element={<LobbyPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/signup" element={<SignupPage />} />
+        <Route path="/play/omok/local" element={<OmokPage mode="local" />} />
+        <Route path="/play/omok/online" element={<OmokPage mode="online" />} />
       </Routes>
     </Layout>
   )
