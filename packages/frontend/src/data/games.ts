@@ -53,7 +53,7 @@ export const GAMES: GameInfo[] = [
     maxPlayers: 2,
     duration: '20~40분',
     difficulty: 'medium',
-    available: false,
+    available: true,
   },
   {
     id: 'checker',

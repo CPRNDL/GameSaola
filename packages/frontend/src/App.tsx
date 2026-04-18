@@ -7,6 +7,7 @@ import SignupPage from './pages/SignupPage'
 import OmokPage from './games/omok/OmokPage'
 import BadukPage from './games/baduk/BadukPage'
 import ChessPage from './games/chess/ChessPage'
+import JanggiPage from './games/janggi/JanggiPage'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/play/omok/online" element={<OmokPage mode="online" />} />
         <Route path="/play/baduk/local" element={<BadukPage />} />
         <Route path="/play/chess/local" element={<ChessPage />} />
+        <Route path="/play/janggi/local" element={<JanggiPage />} />
       </Routes>
     </Layout>
   )
