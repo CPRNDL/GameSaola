@@ -42,7 +42,7 @@ export const GAMES: GameInfo[] = [
     maxPlayers: 4,
     duration: '20~60분',
     difficulty: 'medium',
-    available: false,
+    available: true,
   },
   {
     id: 'janggi',
