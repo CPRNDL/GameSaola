@@ -31,7 +31,7 @@ export const GAMES: GameInfo[] = [
     maxPlayers: 2,
     duration: '30분~',
     difficulty: 'hard',
-    available: false,
+    available: true,
   },
   {
     id: 'chess',
