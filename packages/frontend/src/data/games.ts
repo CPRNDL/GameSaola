@@ -75,7 +75,7 @@ export const GAMES: GameInfo[] = [
     maxPlayers: 4,
     duration: '20~40분',
     difficulty: 'easy',
-    available: false,
+    available: true,
   },
   {
     id: 'onecard',
