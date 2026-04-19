@@ -8,6 +8,7 @@ import OmokPage from './games/omok/OmokPage'
 import BadukPage from './games/baduk/BadukPage'
 import ChessPage from './games/chess/ChessPage'
 import JanggiPage from './games/janggi/JanggiPage'
+import CheckerPage from './games/checker/CheckerPage'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/play/baduk/local" element={<BadukPage />} />
         <Route path="/play/chess/local" element={<ChessPage />} />
         <Route path="/play/janggi/local" element={<JanggiPage />} />
+        <Route path="/play/checker/local" element={<CheckerPage />} />
       </Routes>
     </Layout>
   )

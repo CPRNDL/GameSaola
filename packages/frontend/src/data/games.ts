@@ -64,7 +64,7 @@ export const GAMES: GameInfo[] = [
     maxPlayers: 2,
     duration: '15~30분',
     difficulty: 'easy',
-    available: false,
+    available: true,
   },
   {
     id: 'yacht',
