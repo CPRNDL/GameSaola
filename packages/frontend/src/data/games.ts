@@ -83,10 +83,10 @@ export const GAMES: GameInfo[] = [
     titleKo: '원카드',
     description: '손패를 가장 먼저 다 내려놓으면 승리',
     minPlayers: 2,
-    maxPlayers: 8,
+    maxPlayers: 7,
     duration: '10~30분',
     difficulty: 'easy',
-    available: false,
+    available: true,
   },
   {
     id: 'through-the-ages',

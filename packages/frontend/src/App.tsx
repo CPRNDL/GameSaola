@@ -10,6 +10,7 @@ import ChessPage from './games/chess/ChessPage'
 import JanggiPage from './games/janggi/JanggiPage'
 import CheckerPage from './games/checker/CheckerPage'
 import YachtPage from './games/yacht/YachtPage'
+import OnecardPage from './games/onecard/OnecardPage'
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/play/janggi/local" element={<JanggiPage />} />
         <Route path="/play/checker/local" element={<CheckerPage />} />
         <Route path="/play/yacht/local" element={<YachtPage />} />
+        <Route path="/play/onecard/local" element={<OnecardPage />} />
       </Routes>
     </Layout>
   )
